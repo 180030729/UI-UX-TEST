@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Event Hub</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#featured">Featured</a></li>
+          <li class="nav-item"><a class="nav-link" href="#events">Events</a></li>
+          <li class="nav-item"><a class="nav-link" href="#myBookings">My Bookings</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Homepage Hero -->
+  <header id="home">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Discover Amazing Events</h1>
+      <p class="lead">Join concerts, webinars, workshops, and more with Event Hub!</p>
+    </div>
+  </header>
+
+  <!-- Featured Events Carousel -->
+  <section class="container" id="featured">
+    <h2>Featured Events</h2>
+    <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="sum.jpg" class="d-block w-100" alt="Featured Event 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Summer Music Festival</h5>
+            <p>Join us for an unforgettable night of music!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="ai.jpg" class="d-block w-100" alt="Featured Event 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>AI Innovation Summit</h5>
+            <p>Explore the future of technology with industry leaders.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Event Listing -->
+  <section class="container" id="events">
+    <h2>Upcoming Events</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="con.jpg" class="card-img-top" alt="Event 1">
+          <div class="card-body">
+            <h5 class="card-title">Concert Night</h5>
+            <p class="card-text">An electrifying night with top performers.</p>
+            <a href="#booking" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="tech.jpg" class="card-img-top" alt="Event 2">
+          <div class="card-body">
+            <h5 class="card-title">Tech Webinar</h5>
+            <p class="card-text">Learn about AI and future technology.</p>
+            <a href="#booking" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="ui.jpg" class="card-img-top" alt="Event 3">
+          <div class="card-body">
+            <h5 class="card-title">Workshop</h5>
+            <p class="card-text">Hands-on training for UI/UX skills.</p>
+            <a href="#booking" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="container" id="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>"Event Hub made booking my concert tickets so easy! The experience was seamless."</p>
+          <h6>- Priya S.</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>"I attended a tech webinar through Event Hub and learned so much. Highly recommend!"</p>
+          <h6>- Arjun K.</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>"The platform is user-friendly, and the event selection is amazing!"</p>
+          <h6>- Neha R.</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="container" id="booking">
+    <h2>Book Your Seat</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="eventDate" class="form-label">Event Date</label>
+        <input type="date" class="form-control" id="eventDate" required />
+      </div>
+      <div class="mb-3">
+        <label for="seats" class="form-label">Number of Seats</label>
+        <input type="number" class="form-control" id="seats" min="1" max="10" required />
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </section>
+
+  <!-- Confirmation Message -->
+  <section class="container text-center" id="confirmation">
+    <h2>Booking Confirmed!</h2>
+    <p class="lead">Thank you for booking. We've emailed you the details.</p>
+  </section>
+
+  <!-- My Bookings -->
+  <section class="container" id="myBookings">
+    <h2>My Bookings</h2>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Concert Night - Aug 15</h5>
+        <p class="card-text">Seats: 2 | Location: Delhi</p>
+      </div>
+    </div>
+    <div class="card mb-3">
+      <div class="card-body">
+        <h5 class="card-title">Tech Webinar - Sep 10</h5>
+        <p class="card-text">Seats: 1 | Location: Online</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p class="mb-0">© 2025 Event Hub. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
